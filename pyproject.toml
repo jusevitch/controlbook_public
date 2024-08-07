@@ -1,0 +1,27 @@
+[project]
+name = "controlbook_public"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "control==0.9.4",
+    "matplotlib",
+    "numpy",
+    "PyOpenGL==3.1.1a1",
+    "PyQt6==6.5.3",
+    "pyqtgraph==0.13.3",
+]
+
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64"]
+
+[tool.pixi.pypi-dependencies]
+controlbook_public = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+
+[tool.setuptools.packages.find]
+# include = []
+exclude = [".venv*", "_images*", "_jupyter", ".pixi*"]

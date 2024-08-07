@@ -79,3 +79,6 @@ simulink_old/
 # CMake
 cmake-build-*/
 io_data.npy
+# pixi environments
+.pixi
+*.egg-info
